@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Belajar!</title>
+    <link rel="stylesheet" href="StyleTugas3.css">
+
+<style>
+    *{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Setting untuk bagian body web */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'open sans';
+}
+
+/* Style untuk bagian navigasi bar */
+.navigasi{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/* Setting Class Logo */
+.logo {
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.navigasi .logo img{
+    width: 100px;
+    height: 90px;
+    margin-left: 0px;
+    padding-left: 2px;
+}
+
+/* Style untuk bagian class menu */
+.menu{
+    float:right;
+}
+
+/* Style untuk navigasi bar */
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #FFC7C7;
+    z-index: 1;
+}
+
+/* Style untuk navigasi bar bagian ul */
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+/* Style untk navigasi bar bagian ul kemudian li */
+nav ul li {
+    float:left;
+}
+
+/* Style untk navigasi bar bagian ul kemudian li bagian link atau a */
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-family: 'comic sans ms';
+}
+
+/* Setting agar saat meklik link berubah bentuknya */
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Style Untuk Banner Section Home */
+.banner{
+    height: 87vh;
+    background-image: url(frontend/images/bg2.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style Untuk Banner agar tidak berimpit */
+.banner after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Style untuk H2 yang berada di banner home */
+.banner h2{
+    color: #cc8a8a;
+    z-index: 1;
+    padding: 20px 25px;
+    margin-left: 665px;
+    font-size: 35px;
+    font-family: 'comic sans ms';
+}
+
+/* Style untuk tag p yang berada di class banner dan home */
+.banner .home h4{
+    color: #e6a4a4;
+    font-family: 'comic sans ms';
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 1;
+    margin-left: 670px;
+    margin-top: 0px;
+}
+
+.banner .home p{
+    color: #e6a4a4;
+    font-family: 'comic sans ms';
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+    margin-left: 600px;
+    margin-top: 0px;
+    text-align:center;
+}
+
+/* Style untuk class baris */
+.baris {
+    display: flex;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Style untuk kolom layout web  */
+.kolom {
+    width: 50%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    margin-top: 5px;
+    margin-left: 90px;
+}
+
+/* Style untuk H2 yang berada di class kolom */
+.kolom h2{
+    margin-left: 100px;
+    font-family: 'times new roman';
+    color: #e65983;
+}
+
+/* Style untuk class writter yang berada di class kolom */
+.kolom .writer{
+    margin-left: 100px;
+    margin-top: 7px;
+    font-family: 'times new roman';
+    color: black;
+    font-weight: bold;
+}
+
+/* Style untuk p yang berada di class kolom */
+.kolom p{
+    margin-left: 650px;
+    font-family: 'times new roman';
+    color: black;
+}
+
+/* Style untuk tag a pada button */
+a.button{
+    background: #e6a4a4;
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style untuk class isi yang berada di class kolom */
+.kolom .isi{
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    margin-left: 90px;
+    font-family: 'times new roman';
+    text-align: justify;
+}
+
+/*Style untuk class link yang berada di class kolom  */
+.kolom .link{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    margin-left: 90px;
+}
+
+/* Setting agar saat meklik link berubah bentuknya */
+a.button:hover{
+    background: #FF8AAE;
+    text-decoration: none;
+}
+
+/* Style untuk footer */
+.footer{
+    font-family: 'times new roman';
+    padding: 20px;
+    text-align: center;
+    background-color: #FFC7C7;
+    color: #e02e64;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <!--navigasi-->
+    <nav>
+        <div class="navigasi">
+            <div class="logo"><a href="">
+                <img class="gambar" src="frontend/images/logo3.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Section Home-->
+    <section>
+        <div class="banner">
+            <div class="home">
+                <h2>WELCOME TO MY WEBSITE</h2>
+                <h4>Website Belajar Seputar Teknologi Informasi</h4>
+                <p>I hope you're enjoy in this website and always support this website!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Postingan-->
+    <section>
+        <div class="baris">
+
+            <!--Setting 2 layout-->
+            <!--Layout 1-->
+        <div class="kolom">
+            <img src="frontend/images/artikel1.png"><br>
+            <br>
+            <h2>Apa itu HTML?</h2>
+            <p class="writer">Writer By Ega Rahmatul</p>
+            <p class="isi"><i>Hypertext Markup Language</i> atau HTML adalah bahasa markup yang digunakan untuk 
+                membuat struktur halaman website. HTML terdiri dari kombinasi teks dan simbol 
+                yang disimpan dalam sebuah file. Dalam membuat file HTML, terdapat standar atau
+                format khusus yang harus diikuti. Format tersebut telah tertuang dalam standar
+                kode internasional atau ASCII (<i>American Standard Code for Information Interchange</i>).
+                </p>
+            <p class="link"><a href="" class="button">Read More</a></p>
+        </div>
+
+            <!--Layout 2-->
+        <div class="kolom">
+            <img src="frontend/images/artikel2.png"><br>
+            <br>
+            <h2>Apa itu JavaScript?</h2>
+            <p class="writer">Writer By Ega Rahmatul</p>
+            <p class="isi">JavaScript adalah bahasa pemrograman yang digunakan dalam 
+                pengembangan website agar lebih dinamis dan interaktif. JavaScript atau 
+                kita singkat menjadi JS merupakan bahasa pemrograman jenis interpreter,
+                sehingga kamu tidak memerlukan compiler untuk menjalankannya. JavaScript
+                memiliki fitur-fitur seperti berorientasi objek,<i> client-side,high-level
+                programming, dan loosely typed.</i>
+                </p>
+            <p class="link"><a href="" class="button">Read More</a></p>
+        </div>
+        </div> 
+    </section>
+
+    <!--Section Footer-->
+    <section>
+        <div class="footer">
+            <footer>
+            <p>@copyright 2022 || By Ega Rahmatul Husni ♡ <br> Pekanbaru,Riau</p>
+            </footer>
+        </div>
+    </section>
+
+   <!-- <script src="frontend/Script/script.js"></script> -->
+    
+</body>
+</html>
+

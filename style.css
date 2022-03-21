@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+header{
+    background-image: url(frontend/images/pink.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: left;
+    margin-top: 35px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: brown;
+    padding: 5px 20px;
+    border:2px solid;
+    border-radius: 20px;
+    transition: 0.6s;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+ul li a:hover{
+    background-color: rgb(235, 189, 203);
+    color: rgb(182, 79, 122);
+}ul li.active a{
+    background-color: rgb(202, 99, 134);
+    color: rgb(255, 255, 255);
+}
+
+.contents{
+    text-align: left;
+    text-indent: 45px;
+
+}
+
+.container{
+    width :800px;
+    height :600px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: rgb(250, 234, 240);
+}
+
